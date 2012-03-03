@@ -1,0 +1,200 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* apply a natural box layout model to all elements */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* ========================================================================== */
+
+
+body {
+	margin: 0;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	font-size: 105%;
+	line-height: 150%;
+	color: #333333;
+	background-color:#FAF9E7;
+}
+p {
+	margin-bottom: 1em;
+}
+h1 {
+	font-size:32px;
+	width:300px;
+	height:74px;
+	display: block;
+	text-indent:-9999px;
+	background:url(images/diplogo_small.png) no-repeat left center;
+}
+h2 {
+	font-size: 38px;
+	font-weight: 500;
+	line-height: 120%;
+	margin-bottom: 0.3em;
+	text-transform: uppercase;
+}
+h3 {
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 100%;
+	margin-bottom: 0.3em;
+	margin-top: 0.3em;
+	text-transform: uppercase;
+}
+
+nav ul {float: right;margin-top: 25px;}
+nav ul li {float: left; margin: 10px;}
+.wrap {
+	background-color: #FAF9E7;
+	padding-bottom: 30px;
+	padding-top: 25px;
+}
+.wrap.alt {
+	background-color: #647237;
+	color: #eee;
+}
+.wrap.header {
+	background-color: #fff;
+	border-bottom: 1px solid #d9d9d9;
+}
+.row {
+	width: 85%;
+	max-width: 1000px;
+	margin: 0 auto;
+	position: relative;
+}
+.half, article.half {
+	width: 48%;
+	margin: 0 1%;
+	float: left;
+	-webkit-box-sizing: border-box; 
+}
+
+body > header{
+	border-bottom:1px solid #aeaeae;
+}
+
+aside {
+	position: absolute;
+	right: 0;
+	width: 32%;
+	padding: 10px;
+	background-color:#D36827;
+	color: #fff;
+}
+
+article {
+	width: 63%;
+	padding: 10px;
+}
+article li {
+	list-style: disc;
+	list-style-position: outside;
+}
+
+img.callout {float: right; margin-right: -120px;}
+img.aright {float: right;margin: 10px;}
+
+/* !Sponsor Shots */
+#sponsorShots li {
+	background: #EEE url(images/paper.png);
+	width: 26%;
+	float: left;
+	margin: 3%;
+	text-align: center;
+	color: #333;
+	padding: 3%;
+	box-shadow: 3px 3px 5px #222;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+}
+#sponsorShots li:nth-child(4n){clear: left;}
+#sponsorShots li:hover {
+	-webkit-transform: rotate(0deg) !important;
+	-moz-transform: rotate(0deg);
+}
+#sponsorShots li img {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	border: 1px solid #808080;
+}
+
+
+/* Big Gallery */
+
+.bigGallery {}
+#mainImage img {width: 100%;height: 300px;}
+.smallerImage img {
+	width: 19.2%;
+	height: 150px;
+	float: left;
+	margin-right: 1%;
+}
+.smallerImage:last-child img {margin-right: 0;}
+
+
+/* !Media Queries */
+
+/* iPads (portrait) ----------- */
+@media only screen and (max-width : 768px){
+	.half, article.half {
+		width: 100%;
+	}
+	#sponsorShots li {
+		width: 39%;
+	}
+	#sponsorShots li:nth-child(4n) {
+		clear: none;
+	}
+	#sponsorShots li:nth-child(2n+1) {
+		clear: left;
+	}
+}
