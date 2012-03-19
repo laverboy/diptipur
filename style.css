@@ -56,9 +56,9 @@ table {
 body {
 	margin: 0;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-weight: 300;
-	font-size: 105%;
-	line-height: 150%;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 180%;
 	color: #333333;
 	background-color:#FAF9E7;
 }
@@ -77,8 +77,8 @@ h2 {
 	font-size: 38px;
 	font-weight: 500;
 	line-height: 120%;
-	margin-bottom: 0.3em;
-	text-transform: uppercase;
+	margin-bottom: 0.5em;
+	font-family: 'Paytone One', sans-serif;
 }
 h3 {
 	font-size: 20px;
@@ -89,16 +89,17 @@ h3 {
 	text-transform: uppercase;
 }
 
-nav ul {float: right;margin-top: 25px;}
-nav ul li {float: left; margin: 10px;}
+nav ul {float: right;margin-top: 20px;}
+nav ul li {float: left; margin: 10px 20px;}
 .wrap {
 	background-color: #FAF9E7;
-	padding-bottom: 30px;
-	padding-top: 25px;
+	padding-bottom: 45px;
+	padding-top: 40px;
+	border-bottom: 1px solid #fff;
 }
 .wrap.alt {
 	background-color: #647237;
-	color: #eee;
+	color: #f1f1f1;
 }
 .wrap.header {
 	background-color: #fff;
@@ -111,8 +112,7 @@ nav ul li {float: left; margin: 10px;}
 	position: relative;
 }
 .half, article.half {
-	width: 48%;
-	margin: 0 1%;
+	width: 50%;
 	float: left;
 	-webkit-box-sizing: border-box; 
 }
@@ -125,9 +125,10 @@ aside {
 	position: absolute;
 	right: 0;
 	width: 32%;
-	padding: 10px;
+	padding: 15px 20px 5px;
 	background-color:#D36827;
 	color: #fff;
+	border-radius: 5px;
 }
 
 article {
