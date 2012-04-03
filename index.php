@@ -1,6 +1,4 @@
 <?php
-phpinfo();
-
 include_once "markdown.php";
 
 function curl_get_file_contents($pageUrl)
