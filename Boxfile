@@ -1,3 +1,4 @@
-web1:
-  php_extensions:
-  	- curl
+--- 
+web1: 
+  php_extensions: 
+    - curl
