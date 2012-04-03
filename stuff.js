@@ -27,8 +27,7 @@
 				easing: "swing"
 			});
 			return false;
-		});
-		
+		});		
 		
 	});
 }(jQuery))
