@@ -61,6 +61,7 @@ body {
 	line-height: 180%;
 	color: #333333;
 	background-color:#FAF9E7;
+	padding-top: 160px;
 }
 p {
 	margin-bottom: 1em;
@@ -112,6 +113,10 @@ nav a:hover {
 .wrap.header {
 	background-color: #fff;
 	border-bottom: 1px solid #d9d9d9;
+        position: fixed;
+	top: 0;
+	z-index: 100;
+	width: 100%;
 }
 .row {
 	width: 85%;

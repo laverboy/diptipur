@@ -88,13 +88,13 @@ function curl_get_file_contents($pageUrl)
 
 
 		<h2>Sponsor a Child</h2>
-		<p>Meet some of the children that the hospice has helped.</p>
+		<p>Meet some of the children that the hostel has helped.</p>
 		
-		<ul id="sponsorShots" class="md">
+		<div id="sponsorShots" class="md">
 			
 			<?= curl_get_file_contents("children.md"); ?>
 			
-		</ul>
+		</div>
 
 		<div style="clear:both;"></div>
 
