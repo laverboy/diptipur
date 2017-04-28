@@ -1,11 +1,11 @@
 (function ($) {
 	$(document).ready(function () {
-	
+
 		$('.flexslider').flexslider({
 			animation: "slide",
 			controlsContainer: ".flex-container"
 		});
-		
+
 		function deg () {
 			var angles = [-3,-2,2,3];
 			return angles[Math.floor(Math.random()*angles.length)];
@@ -16,18 +16,18 @@
 				"-moz-transform": 'rotate(' + deg() + 'deg)'
 			});
 		});
-		
-		
+
+
 		/* ======= Smooth Scrolling ======= */
 		$("a.topLink").click(function() {
 			$("html, body").animate({
-				scrollTop: $($(this).attr("href")).offset().top - 160 
+				scrollTop: $($(this).attr("href")).offset().top - 160
 			}, {
 				duration: 500,
 				easing: "swing"
 			});
 			return false;
 		});
-		
+
 	});
 }(jQuery));
